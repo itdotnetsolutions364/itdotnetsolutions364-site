@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IT DOT NET SOLUTIONS</title>
+  <style>
+   /* General Reset & Layout */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+}
+
+header {
+  background-color: #004466;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Navbar */
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul li {
+  position: relative;
+  padding: 15px 20px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Submenu: initially hidden */
+.navbar .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  min-width: 200px;
+}
+
+/* Submenu items */
+.navbar .submenu li {
+  padding: 10px;
+  color: #000;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  white-space: nowrap;
+}
+
+/* Show submenu on hover */
+.dropdown:hover .submenu {
+  display: block;
+}
+
+/* Highlight submenu item on hover */
+.navbar .submenu li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Modules Grid on Homepage */
+.modules {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.module {
+  background: white;
+  width: 45%;
+  margin: 15px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 15px;
+}
+
+.module img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+/* Footer */
+footer {
+  background: #004466;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.header-container h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.contact-info {
+  margin: 0;
+  font-size: 14px;
+  text-align: right;
+  color: #ddd;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1>IT DOT NET SOLUTIONS</h1>
+      <p class="contact-info">info@itdotnetsolutions.com | +91 6301771326</p>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <ul>
+      <li class="dropdown">.NET
+        <ul class="submenu">
+          <li>C#</li>
+          <li>ASP.NET Web Forms</li>
+          <li>ASP.NET MVC</li>
+          <li>ADO.NET</li>
+          <li>Entity Framework</li>
+          <li>LINQ</li>
+          <li>SQL Server</li>
+          <li>HTML, CSS, Bootstrap</li>
+          <li>jQuery, JavaScript</li>
+          <li>Angular</li>
+          <li>React.js</li>
+          <li>TypeScript</li>
+        </ul>
+      </li>
+      <li class="dropdown">Java
+        <ul class="submenu">
+          <li>Core Java</li>
+          <li>Advanced Java</li>
+          <li>Spring Boot</li>
+          <li>SQL Server</li>
+          <li>HTML, CSS, Bootstrap</li>
+          <li>jQuery, JavaScript</li>
+          <li>Angular</li>
+          <li>React.js</li>
+          <li>TypeScript</li>
+        </ul>
+      </li>
+      <li class="dropdown">Python
+        <ul class="submenu">
+          <li>Core Python</li>
+          <li>Django</li>
+          <li>Flask</li>
+          <li>NumPy</li>
+          <li>Pandas</li>
+          <li>Matplotlib</li>
+          <li>SciPy</li>
+          <li>Scikit-learn</li>
+          <li>SQLAlchemy</li>
+          <li>Jupyter Notebooks</li>
+        </ul>
+      </li>
+      <li class="dropdown">Data Science
+        <ul class="submenu">
+          <li>Data Visualization</li>
+          <li>Statistical Analysis</li>
+          <li>Machine Learning</li>
+          <li>Data Manipulation</li>
+          <li>Data Cleaning</li>
+          <li>Exploratory Data Analysis</li>
+          <li>Model Tuning</li>
+          <li>Time Series</li>
+          <li>Deep Learning</li>
+          <li>Big Data Basics</li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <main class="modules">
+    <div class="module">
+      <h2>.NET</h2>
+      <p>Comprehensive training on Microsoft technologies including C#, ASP.NET, MVC, Entity Framework and more.</p>
+    </div>
+
+    <div class="module">
+      <h2>Java</h2>
+      <p>Learn Java from basics to advanced including Spring Boot, and integration with modern frontend tech.</p>
+    </div>
+
+    <div class="module">
+      <h2>Python</h2>
+      <p>Master Python programming, frameworks like Django and Flask, and libraries like Pandas and NumPy.</p>
+    </div>
+
+    <div class="module">
+      <h2>Data Science</h2>
+      <p>Dive into data analytics, machine learning, and visualization using Python’s powerful tools.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 IT DOT NET SOLUTIONS. All rights reserved.</p>
+  </footer>
+</body>
+</html>
